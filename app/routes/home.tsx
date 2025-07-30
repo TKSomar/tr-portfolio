@@ -2,6 +2,9 @@ import type { Route } from "./+types/home";
 import Navbar from "~/components/Navbar";
 import ExperienceTimeline from "~/components/ExperienceTimeline";
 import { motion } from "framer-motion";
+import Skills from "~/components/Skills";
+import BottomNav from "~/components/BottomNav";
+import Interests from "~/components/Interests";
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -29,10 +32,10 @@ export default function Home() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="main-section flex flex-col bg-[url('./images/bg-header.jpg')] bg-cover bg-center bg-no-repeat min-h-screen">
-                <div className="page-heading p-16 flex flex-col items-center justify-center">
+            <section id="home" className="main-section flex flex-col bg-[url('./images/bg-dark-code.jpg')] bg-cover bg-center bg-no-repeat min-h-screen">
+                <div className="page-heading p-16 pt-34 flex flex-col items-center justify-center uppercase font-bold">
                     <motion.h1
-                        className="text-5xl font-bold text-white"
+                        className="text-5xl text-white"
                         custom={0}
                         variants={headingVariant}
                         initial="hidden"
@@ -58,32 +61,38 @@ export default function Home() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
                 >
-                    <h2 className="text-3xl font-semibold text-white">Introduction</h2>
-                    <p className="text-white text-center p-10 max-w-[780px]">
+                    <h2 className="text-3xl font-semibold text-white uppercase">Introduction</h2>
+                    <p className="text-white text-center p-10 max-w-[1170px]">
                         Passionate and results-driven Software Engineer with a strong background in full-stack web development, specializing in React, Next.js, WordPress, and modern backend technologies. Experienced in building and maintaining high-impact web applications for companies like Morning Consult and Auctane. Adept at enhancing user experience, streamlining deployment pipelines, and applying SEO best practices for maximum reach. A quick learner and creative problem-solver who enjoys building meaningful digital solutions and collaborating across teams.
                     </p>
                 </motion.div>
             </section>
 
             {/* Timeline */}
-            <section className="experience-section">
+            <section id="experience" className="experience-section">
                 <div className="timeline">
                     <ExperienceTimeline />
                 </div>
             </section>
 
             {/* Other Sections (placeholders) */}
-            <section className="skills-section">
-                <div className="skills"></div>
+            <section id="skills" className="skills-section">
+                <div className="skills container">
+                    <Skills />
+                </div>
             </section>
 
-            <section className="hobbies-section">
+            <section id="interests" className="interests-section">
+                <div className="interests container">
+                    <Interests />
+                </div>
+            </section>
+
+            <section id="hobbies" className="hobbies-section">
                 <div className="hobbies"></div>
             </section>
 
-            <section className="interests-section">
-                <div className="interests"></div>
-            </section>
+            <BottomNav />
         </main>
     );
 }

@@ -6,30 +6,62 @@ import { useRef } from 'react';
 
 const timelineData = [
     {
-        title: "Creative Director",
-        subtitle: "Miami, FL",
+        title: "Web Developer",
+        subtitle: "Austin, TX",
         description:
-            "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-        date: "2011 - present",
+            "PHP/MySQL/JS development\n" +
+            "WordPress | WPEngine",
+        date: "2024 - 2025",
         icon: <FaStar />,
         color: "bg-blue-500",
     },
     {
-        title: "Art Director",
-        subtitle: "San Francisco, CA",
+        title: "Software Developer",
+        subtitle: "McKinney, TX",
         description:
-            "Creative Direction, User Experience, Visual Design, SEO, Online Marketing",
-        date: "2010 - 2011",
+            "ASP.NET/SQL/JS development\n" +
+            "NextJS | React",
+        date: "2024",
+        icon: <FaStar />,
+        color: "bg-blue-500",
+    },
+    {
+        title: "Software Engineer II ",
+        subtitle: "Washington D.C.",
+        description:
+            "PHP/MySQL/JS development\n" +
+            "WordPress | Docker | NextJS | NodeJS",
+        date: "2021 - 2023",
+        icon: <FaStar />,
+        color: "bg-blue-500",
+    },
+    {
+        title: "Software Engineer I ",
+        subtitle: "Washington D.C.",
+        description:
+            "PHP/MySQL/JS development\n" +
+            "WordPress | Docker | React | DataViz",
+        date: "2020 - 2021",
+        icon: <FaStar />,
+        color: "bg-blue-500",
+    },
+    {
+        title: "Web Developer ",
+        subtitle: "Lubbock, TX",
+        description:
+            "PHP/MySQL/JS/HTML/CSS development\n" +
+            "WordPress  | Google Ads SEO/PPC",
+        date: "2018 - 2020",
+        icon: <FaStar />,
+        color: "bg-blue-500",
+    },
+    {
+        title: "Full Stack Web Development Certification ",
+        subtitle: "Remote",
+        description: "Full Stack Web Development using React, Node, Express, Axios, SQL DBs",
+        date: "2020",
         icon: <FaSchoolFlag />,
         color: "bg-blue-500",
-    },
-    {
-        title: "Bachelor of Science in Interactive Digital Media Visual Imaging",
-        subtitle: "Bachelor Degree",
-        description: "Creative Direction, Visual Design",
-        date: "2002 - 2006",
-        icon: <FaStar />,
-        color: "bg-pink-600",
     },
 ];
 

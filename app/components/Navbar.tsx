@@ -10,8 +10,7 @@ export default function Navbar() {
             <nav className="sticky top-0 z-50 backdrop-blur-md bg-gray-800/70 text-gray-100 shadow-md">
                 <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
                     <a href="#home" className="flex items-center space-x-2 hover:text-white">
-                        <HomeIcon className="h-6 w-6" />
-                        <span className="font-semibold">Home</span>
+                        <span className="font-semibold">PORTFOLIO</span>
                     </a>
 
                     <div className="flex items-center space-x-5">

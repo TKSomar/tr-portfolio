@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 /* Custom base styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-black;
 }
@@ -15,6 +19,22 @@ h1 {
 
 h2 {
   @apply text-white max-sm:text-xl text-3xl;
+}
+
+.container {
+  @apply max-w-[1170px] mx-auto;
+}
+
+.experience {
+  @apply pb-12;
+}
+
+.skills {
+  @apply pb-12;
+}
+
+.interests {
+  @apply pb-12;
 }
 
 @utility bg-gradient {

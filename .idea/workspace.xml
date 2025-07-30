@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a29b1cf-873f-468d-85d4-79b63f2ed903" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/ExperienceTimeline.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/BottomNav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Interests.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Skills.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bg-dark-code.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bg-dark-code.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ExperienceTimeline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ExperienceTimeline.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1753824755768</updated>
       <workItem from="1753824756878" duration="5881000" />
-      <workItem from="1753844596408" duration="3062000" />
+      <workItem from="1753844596408" duration="3285000" />
+      <workItem from="1753893319290" duration="9238000" />
     </task>
     <servers />
   </component>
