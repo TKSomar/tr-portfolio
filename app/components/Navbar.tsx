@@ -1,91 +1,62 @@
-import React, { useState } from 'react';
-import {
-    AppBar,
-    Toolbar,
-    Typography,
-    IconButton,
-    Box,
-    Button,
-    Dialog,
-    DialogTitle,
-    DialogContent,
-    DialogActions,
-} from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import { useState } from 'react'
+import { EnvelopeIcon, HomeIcon } from '@heroicons/react/24/outline'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
-const Navbar: React.FC = () => {
-    const [openContact, setOpenContact] = useState(false);
-
-    const handleOpenContact = () => setOpenContact(true);
-    const handleCloseContact = () => setOpenContact(false);
+export default function Navbar() {
+    const [showModal, setShowModal] = useState(false)
 
     return (
         <>
-            <AppBar position="static" className="text-white">
-                <Toolbar className="flex justify-between">
-                    {/* Left Side */}
-                    <Box className="flex items-center gap-2">
-                        <IconButton href="/" edge="start" aria-label="home" className="">
-                            <HomeIcon />
-                        </IconButton>
-                        <Typography variant="h6" noWrap className="font-semibold">
-                            My Portfolio
-                        </Typography>
-                    </Box>
+            <nav className="sticky top-0 z-50 backdrop-blur-md bg-gray-800/70 text-gray-100 shadow-md">
+                <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+                    <a href="#home" className="flex items-center space-x-2 hover:text-white">
+                        <HomeIcon className="h-6 w-6" />
+                        <span className="font-semibold">Home</span>
+                    </a>
 
-                    {/* Right Side */}
-                    <Box className="flex items-center gap-2">
-                        <IconButton
+                    <div className="flex items-center space-x-5">
+                        <a
                             href="https://www.linkedin.com/in/triston-ramos"
                             target="_blank"
-                            rel="noopener"
-                            aria-label="LinkedIn"
-                            className="text-white transition"
+                            rel="noopener noreferrer"
+                            className="hover:text-white"
                         >
-                            <LinkedInIcon />
-                        </IconButton>
-                        <IconButton
+                            <FaLinkedin className="h-6 w-6" />
+                        </a>
+                        <a
                             href="https://github.com/TKSomar"
                             target="_blank"
-                            rel="noopener"
-                            aria-label="GitHub"
-                            className="transition"
+                            rel="noopener noreferrer"
+                            className="hover:text-white"
                         >
-                            <GitHubIcon />
-                        </IconButton>
-                        <Button
-                            variant="outlined"
-                            startIcon={<MailOutlineIcon />}
-                            onClick={handleOpenContact}
-                            className=""
+                            <FaGithub className="h-6 w-6" />
+                        </a>
+                        <button
+                            onClick={() => setShowModal(true)}
+                            className="flex items-center space-x-1 border border-gray-500 px-3 py-1 rounded-md text-sm hover:bg-gray-700 transition"
                         >
-                            Contact
-                        </Button>
-                    </Box>
-                </Toolbar>
-            </AppBar>
+                            <EnvelopeIcon className="h-5 w-5" />
+                            <span>Contact</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
 
-            {/* Contact Modal */}
-            <Dialog open={openContact} onClose={handleCloseContact}>
-                <DialogTitle className="font-semibold text-text-dark">Contact Me</DialogTitle>
-                <DialogContent className="bg-surface text-secondary">
-                    <Typography variant="body1">
-                        Feel free to reach out via email or phone at:
-                        <br />
-                        <strong className="text-primary">tksomar@gmail.com | +1 (737) 341-3222</strong>
-                    </Typography>
-                </DialogContent>
-                <DialogActions className="bg-background">
-                    <Button onClick={handleCloseContact} className="text-primary hover:underline normal-case">
-                        Close
-                    </Button>
-                </DialogActions>
-            </Dialog>
+            {showModal && (
+                <div className="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center">
+                    <div className="bg-gray-900 text-white p-6 rounded-lg shadow-lg w-80">
+                        <h2 className="text-xl font-bold mb-4">Contact Me</h2>
+                        <p>Email: <a className="text-blue-300 underline" href="mailto:tksomar@gmail.com">tksomar@gmail.com</a></p>
+                        <p>Phone: <a className="text-blue-300" href="tel:+17373413222">(737) 341-3222</a></p>
+                        <button
+                            onClick={() => setShowModal(false)}
+                            className="mt-6 w-full bg-gray-700 hover:bg-gray-600 py-2 rounded-md"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </>
-    );
-};
-
-export default Navbar;
+    )
+}

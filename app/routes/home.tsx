@@ -1,44 +1,89 @@
 import type { Route } from "./+types/home";
 import Navbar from "~/components/Navbar";
+import ExperienceTimeline from "~/components/ExperienceTimeline";
+import { motion } from "framer-motion";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+    return [
+        { title: "New React Router App" },
+        { name: "description", content: "Welcome to React Router!" },
+    ];
 }
 
+const headingVariant = {
+    hidden: { opacity: 0, y: 40 },
+    visible: (i: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: i * 0.3,
+            duration: 0.6,
+            ease: "easeOut",
+        },
+    }),
+};
+
 export default function Home() {
-  return (
-      <main>
-        <Navbar />
+    return (
+        <main>
+            <Navbar />
 
-        <section className="main-section flex flex-col bg-[url('./images/bg-header.jpg')] bg-cover h-[100vh]">
-          <div className="page-heading p-16 flex flex-col items-center justify-center">
-              <h1>Triston Ramos</h1>
-              <h2>Web Engineer</h2>
-          </div>
-          <div className="introduction flex flex-col items-center justify-center">
-              <h2>Introduction</h2>
-              <p className="text-white text-center p-10 max-w-[780px]">Passionate and results-driven Software Engineer with a strong background in full-stack web development, specializing in React, Next.js, WordPress, and modern backend technologies. Experienced in building and maintaining high-impact web applications for companies like Morning Consult and Auctane. Adept at enhancing user experience, streamlining deployment pipelines, and applying SEO best practices for maximum reach. A quick learner and creative problem-solver who enjoys building meaningful digital solutions and collaborating across teams.</p>
-          </div>
-        </section>
+            {/* Hero Section */}
+            <section className="main-section flex flex-col bg-[url('./images/bg-header.jpg')] bg-cover bg-center bg-no-repeat min-h-screen">
+                <div className="page-heading p-16 flex flex-col items-center justify-center">
+                    <motion.h1
+                        className="text-5xl font-bold text-white"
+                        custom={0}
+                        variants={headingVariant}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        Triston Ramos
+                    </motion.h1>
+                    <motion.h2
+                        className="text-2xl text-gray-300 mt-2"
+                        custom={1}
+                        variants={headingVariant}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        Web Engineer
+                    </motion.h2>
+                </div>
 
-        <section className="experience-section">
-          <div className="timeline"></div>
-        </section>
+                {/* Introduction */}
+                <motion.div
+                    className="introduction flex flex-col items-center justify-center"
+                    initial={{ opacity: 0, y: 60 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.7, duration: 0.8, ease: "easeOut" }}
+                >
+                    <h2 className="text-3xl font-semibold text-white">Introduction</h2>
+                    <p className="text-white text-center p-10 max-w-[780px]">
+                        Passionate and results-driven Software Engineer with a strong background in full-stack web development, specializing in React, Next.js, WordPress, and modern backend technologies. Experienced in building and maintaining high-impact web applications for companies like Morning Consult and Auctane. Adept at enhancing user experience, streamlining deployment pipelines, and applying SEO best practices for maximum reach. A quick learner and creative problem-solver who enjoys building meaningful digital solutions and collaborating across teams.
+                    </p>
+                </motion.div>
+            </section>
 
-        <section className="skills-section">
-          <div className="skills"></div>
-        </section>
+            {/* Timeline */}
+            <section className="experience-section">
+                <div className="timeline">
+                    <ExperienceTimeline />
+                </div>
+            </section>
 
-        <section className="hobbies-section">
-          <div className="hobbies"></div>
-        </section>
+            {/* Other Sections (placeholders) */}
+            <section className="skills-section">
+                <div className="skills"></div>
+            </section>
 
-        <section className="interests-section">
-          <div className="interests"></div>
-        </section>
-      </main>
-  );
+            <section className="hobbies-section">
+                <div className="hobbies"></div>
+            </section>
+
+            <section className="interests-section">
+                <div className="interests"></div>
+            </section>
+        </main>
+    );
 }
