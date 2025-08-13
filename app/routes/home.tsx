@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 import Skills from "~/components/Skills";
 import BottomNav from "~/components/BottomNav";
 import Interests from "~/components/Interests";
+import Projects from "~/components/Projects";
 
 export function meta({}: Route.MetaArgs) {
     return [
-        { title: "New React Router App" },
-        { name: "description", content: "Welcome to React Router!" },
+        { title: "Triston Ramos | Portfolio" },
+        { name: "description", content: "Welcome to my portfolio!" },
     ];
 }
 
@@ -32,7 +33,7 @@ export default function Home() {
             <Navbar />
 
             {/* Hero Section */}
-            <section id="home" className="main-section flex flex-col bg-[url('./images/bg-dark-code.jpg')] bg-cover bg-center bg-no-repeat min-h-screen">
+            <section id="home" className="main-section flex flex-col bg-[url('/images/bg-dark-code.jpg')] bg-cover bg-center bg-no-repeat min-h-screen">
                 <div className="page-heading p-16 pt-34 flex flex-col items-center justify-center uppercase font-bold">
                     <motion.h1
                         className="text-5xl text-white"
@@ -72,6 +73,12 @@ export default function Home() {
             <section id="experience" className="experience-section">
                 <div className="timeline">
                     <ExperienceTimeline />
+                </div>
+            </section>
+
+            <section id="projects" className="projects-section">
+                <div className="timeline">
+                    <Projects />
                 </div>
             </section>
 

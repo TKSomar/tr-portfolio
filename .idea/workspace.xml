@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a29b1cf-873f-468d-85d4-79b63f2ed903" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/BottomNav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Interests.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Skills.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bg-dark-code.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/bg-dark-code.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Projects.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/echo-dashboard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/karpos-login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mc-pro.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/mc-site.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/resumind-review-pg.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ExperienceTimeline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ExperienceTimeline.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/BottomNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BottomNav.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react-router.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +42,9 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Repos/tr-portfolio/public/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Repos/tr-portfolio/build/client/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -56,6 +57,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Repos\tr-portfolio\build\client\images" />
       <recent name="C:\Repos\tr-portfolio\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -78,7 +80,11 @@
       <updated>1753824755768</updated>
       <workItem from="1753824756878" duration="5881000" />
       <workItem from="1753844596408" duration="3285000" />
-      <workItem from="1753893319290" duration="9238000" />
+      <workItem from="1753893319290" duration="11182000" />
+      <workItem from="1753911712583" duration="5000" />
+      <workItem from="1754591494463" duration="5530000" />
+      <workItem from="1754871479115" duration="462000" />
+      <workItem from="1755100491321" duration="314000" />
     </task>
     <servers />
   </component>

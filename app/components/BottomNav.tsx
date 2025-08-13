@@ -1,9 +1,10 @@
 import React from "react";
-import { FaHome, FaUser, FaCode, FaBriefcase } from "react-icons/fa";
+import {FaHome, FaUser, FaCode, FaBriefcase, FaProjectDiagram} from "react-icons/fa";
 
 const navItems = [
     { href: "home", icon: <FaHome />, label: "Home" },
     { href: "experience", icon: <FaUser />, label: "Experience" },
+    { href: "projects", icon: <FaProjectDiagram />, label: "Projects" },
     { href: "skills", icon: <FaCode />, label: "Skills" },
     { href: "interests", icon: <FaBriefcase />, label: "Interests" },
 ];
