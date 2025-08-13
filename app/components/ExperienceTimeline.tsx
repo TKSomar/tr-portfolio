@@ -8,9 +8,8 @@ const timelineData = [
     {
         title: "Web Developer",
         subtitle: "Austin, TX",
-        description:
-            "PHP/MySQL/JS development\n" +
-            "WordPress | WPEngine",
+        description: "PHP/MySQL/JS/CSS/HTML development",
+        description2: "WordPress | WPEngine | Tailwind | TwigPHP | Figma",
         date: "2024 - 2025",
         icon: <FaStar />,
         color: "bg-blue-500",
@@ -18,9 +17,8 @@ const timelineData = [
     {
         title: "Software Developer",
         subtitle: "McKinney, TX",
-        description:
-            "ASP.NET/SQL/JS development\n" +
-            "NextJS | React",
+        description: "ASP.NET/C#/SQL/JS development",
+        description2: "NextJS | React | .NET",
         date: "2024",
         icon: <FaStar />,
         color: "bg-blue-500",
@@ -28,9 +26,8 @@ const timelineData = [
     {
         title: "Software Engineer II ",
         subtitle: "Washington D.C.",
-        description:
-            "PHP/MySQL/JS development\n" +
-            "WordPress | Docker | NextJS | NodeJS",
+        description: "PHP/MySQL/JS/HTML/CSS development",
+        description2: "WordPress | Docker | NextJS | React | Typescript| NodeJS | Storybook | Figma",
         date: "2021 - 2023",
         icon: <FaStar />,
         color: "bg-blue-500",
@@ -38,9 +35,8 @@ const timelineData = [
     {
         title: "Software Engineer I ",
         subtitle: "Washington D.C.",
-        description:
-            "PHP/MySQL/JS development\n" +
-            "WordPress | Docker | React | DataViz",
+        description: "PHP/MySQL/JS/SCSS/HTML development",
+        description2: "WordPress | Docker | React | Highcharts | Figma",
         date: "2020 - 2021",
         icon: <FaStar />,
         color: "bg-blue-500",
@@ -48,9 +44,8 @@ const timelineData = [
     {
         title: "Web Developer ",
         subtitle: "Lubbock, TX",
-        description:
-            "PHP/MySQL/JS/HTML/CSS development\n" +
-            "WordPress  | Google Ads SEO/PPC",
+        description: "PHP/MySQL/JS/HTML/CSS development",
+        description2: "WordPress  | Google Ads SEO/PPC",
         date: "2018 - 2020",
         icon: <FaStar />,
         color: "bg-blue-500",
@@ -59,6 +54,7 @@ const timelineData = [
         title: "Full Stack Web Development Certification ",
         subtitle: "Remote",
         description: "Full Stack Web Development using React, Node, Express, Axios, SQL DBs",
+        description2: "",
         date: "2020",
         icon: <FaSchoolFlag />,
         color: "bg-blue-500",
@@ -95,7 +91,7 @@ const TimelineItem = ({ item }: { item: typeof timelineData[0] }) => {
                 <p className="text-sm text-gray-400">{item.date}</p>
                 <h3 className="text-xl font-bold text-gray-800">{item.title}</h3>
                 <h4 className="text-md text-gray-600">{item.subtitle}</h4>
-                <p className="mt-2 text-gray-700">{item.description}</p>
+                <p className="mt-2 text-gray-700">{item.description}<br/>{item.description2}</p>
             </div>
         </motion.div>
     );

@@ -27,7 +27,7 @@ const projects = [
     },
     {
         title: 'Morning Consult Pro',
-        description: 'A NextJS headless WordPress app that is integrated the SASS product with the public-facing News and Marketing site.',
+        description: 'A NextJS headless WordPress app that integrated the SASS product with the public-facing news and marketing site.',
         image: '/images/mc-pro.PNG',
         link: 'https://web.archive.org/web/20240901082708/https://pro.morningconsult.com/',
         linkLabel: 'Live Site',
@@ -37,6 +37,13 @@ const projects = [
         description: 'A custom WordPress site built with TwigPHP and SCSS.',
         image: '/images/mc-site.PNG',
         link: 'https://web.archive.org/web/20220308012236/http://www.morningconsult.com/',
+        linkLabel: 'Live Site',
+    },
+    {
+        title: 'Chinchilla Leal PLLC',
+        description: 'A simple site for my brother and his colleague built on WordPress and SeedProd.',
+        image: '/images/chin-leal-site.PNG',
+        link: 'https://chinchillaleal.com/',
         linkLabel: 'Live Site',
     },
 ];

@@ -69,7 +69,6 @@ export default function Home() {
                 </motion.div>
             </section>
 
-            {/* Timeline */}
             <section id="experience" className="experience-section">
                 <div className="timeline">
                     <ExperienceTimeline />
@@ -77,27 +76,26 @@ export default function Home() {
             </section>
 
             <section id="projects" className="projects-section">
-                <div className="timeline">
+                <div className="projects">
                     <Projects />
                 </div>
             </section>
 
-            {/* Other Sections (placeholders) */}
             <section id="skills" className="skills-section">
-                <div className="skills container">
+                <div className="skills">
                     <Skills />
                 </div>
             </section>
 
             <section id="interests" className="interests-section">
-                <div className="interests container">
+                <div className="interests">
                     <Interests />
                 </div>
             </section>
 
-            <section id="hobbies" className="hobbies-section">
-                <div className="hobbies"></div>
-            </section>
+            {/*<section id="hobbies" className="hobbies-section">*/}
+            {/*    <div className="hobbies"></div>*/}
+            {/*</section>*/}
 
             <BottomNav />
         </main>
